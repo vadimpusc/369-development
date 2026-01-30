@@ -222,3 +222,52 @@ h1{margin:10px 0 6px;font-size:38px}
   font-size:15px;
   line-height:1.5;
 }
+
+
+@media (max-width: 899px){
+  .modalPanel{
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+}
+
+/* ===== MOBILE MODAL FIX (poster always fully visible) ===== */
+@media (max-width: 899px){
+
+  /* Remove boxed frame feeling */
+  .modalPanel{
+    border: none;
+    background: linear-gradient(to bottom, #0c0e12 0%, #0b0d11 100%);
+  }
+
+  /* Let poster breathe edge-to-edge inside modal padding */
+  .posterCol{
+    padding: 10px 10px 0;
+    background: transparent;
+  }
+
+  /* Make poster larger but still fully visible */
+  .mPoster{
+    width: 100%;
+    height: auto;
+    max-height: 62svh;   /* was 50 — now more dominant */
+    object-fit: contain;
+    border-radius: 10px;
+    border: none;        /* remove image frame line */
+  }
+
+  @supports not (height: 1svh){
+    .mPoster{ max-height: 62vh; }
+  }
+
+  /* Pull text slightly closer for better flow */
+  .infoCol{
+    padding: 16px 18px 26px;
+  }
+
+  /* Make close button float cleaner */
+  .close{
+    background: rgba(255,255,255,.10);
+    border: none;
+    backdrop-filter: blur(6px);
+  }
+}
