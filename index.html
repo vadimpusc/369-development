@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Films in Development | San Roku Ku</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="top">
+    <div class="wrap">
+      <a class="brand" href="https://sanrokuku.com/">San Roku Ku</a>
+      <h1>Films in Development</h1>
+      <p class="sub">A curated slate of projects currently in development.</p>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <div class="toolbar">
+      <input id="search" class="search" placeholder="Search title, genre, names..." autocomplete="off" />
+      <div id="count" class="count"></div>
+    </div>
+
+    <section id="grid" class="grid" aria-label="Films"></section>
+  </main>
+
+  <div id="modal" class="modal" aria-hidden="true">
+    <div class="modalBackdrop" data-close></div>
+
+    <div class="modalPanel" role="dialog" aria-modal="true" aria-label="Film details">
+      <button class="close" type="button" data-close aria-label="Close">Close</button>
+
+      <div class="modalBody">
+        <div class="posterCol">
+          <img id="mPoster" class="mPoster" alt="" />
+        </div>
+
+        <div class="infoCol">
+          <div class="kicker" id="mKicker"></div>
+          <h2 id="mTitle"></h2>
+          <p class="logline" id="mLogline"></p>
+
+          <div class="meta">
+            <div class="row"><div class="label">Director</div><div class="value" id="mDirector"></div></div>
+            <div class="row"><div class="label">Producer</div><div class="value" id="mProducer"></div></div>
+            <div class="row"><div class="label">Writer</div><div class="value" id="mWriter"></div></div>
+            <div class="row"><div class="label">Production</div><div class="value" id="mProdCos"></div></div>
+            <div class="row"><div class="label">Distributor</div><div class="value" id="mDistributor"></div></div>
+            <div class="row"><div class="label">Cast</div><div class="value" id="mCast"></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

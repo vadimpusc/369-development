@@ -1,0 +1,17 @@
+{
+  "films": [
+    {
+      "title": "The River We Cannot Leave",
+      "year": 2026,
+      "genre": ["Drama", "Romance"],
+      "poster": "",
+      "logline": "After a painful breakup, a lost traveler pauses by a riverside where a guarded local woman seeking solitude shares an unexpected afternoon with him. Through quiet conversation and shared silence, two strangers confront grief, love, and the courage it takes to finally let go and move forward.",
+      "director": ["Hank Orion"],
+      "producer": ["Vadim Pusceddu"],
+      "writer": ["Hank Orion"],
+      "productionCompanies": ["San Roku Ku"],
+      "distributor": ["San Roku Ku"],
+      "cast": ["Rei", "Dan Iliadis"]
+    }
+  ]
+}
