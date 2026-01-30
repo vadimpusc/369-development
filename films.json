@@ -12,6 +12,58 @@
       "productionCompanies": ["San Roku Ku"],
       "distributor": ["San Roku Ku"],
       "cast": ["Rei", "Dan Iliadis"]
+    },
+        {
+      "title": "Chat Room",
+      "year": 2026,
+      "genre": ["Thriller"],
+      "poster": "",
+      "logline": "Insomniac Ethan bonds with a woman online, then watches in horror as a masked intruder attacks her live on camera. As he desperately searches for clues to save her, he realizes he is being watched too, and the nightmare is only beginning.",
+      "director": ["Hank Orion"],
+      "producer": ["Vadim Pusceddu"],
+      "writer": ["Hank Orion"],
+      "productionCompanies": ["San Roku Ku"],
+      "distributor": [""],
+      "cast": ["", ""]
+    },
+       {
+      "title": "Escape Room",
+      "year": 2026,
+      "genre": ["Thriller"],
+      "poster": "",
+      "logline": "New to the city, Emily falls into a whirlwind friendship with a stranger who invites her into an exclusive underground scene. As the night unfolds, thrill shifts to dread, and she realizes she may be in far deeper than she ever expected.",
+      "director": ["Hank Orion"],
+      "producer": ["Vadim Pusceddu"],
+      "writer": ["Hank Orion"],
+      "productionCompanies": ["San Roku Ku"],
+      "distributor": [""],
+      "cast": ["", ""]
+    },
+    {
+      "title": "Downfall",
+      "year": 2026,
+      "genre": ["Drama"],
+      "poster": "",
+      "logline": "A struggling writer slowly self-destructs through alcohol, failure, and regret, losing his career, relationship, and stability, before clawing his way back through sheer persistence and one final breakthrough.",
+      "director": ["Hank Orion"],
+      "producer": ["Vadim Pusceddu"],
+      "writer": ["Hank Orion"],
+      "productionCompanies": ["San Roku Ku"],
+      "distributor": [""],
+      "cast": ["", ""]
+    },
+    {
+      "title": "Dark Forest",
+      "year": 2026,
+      "genre": ["Horror"],
+      "poster": "",
+      "logline": "A vlogger ventures into a forbidden forest to uncover the truth behind his brother’s disappearance.",
+      "director": ["Hank Orion"],
+      "producer": ["Vadim Pusceddu"],
+      "writer": ["Hank Orion"],
+      "productionCompanies": ["San Roku Ku"],
+      "distributor": [""],
+      "cast": ["", ""]
     }
   ]
 }
