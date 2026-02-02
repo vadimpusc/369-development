@@ -1,7 +1,7 @@
 {
   "films": [
     {
-      "title": "The River We Cannot Leave",
+      "title": "The River",
       "year": 2026,
       "genre": ["Drama", "Romance"],
       "poster": "",
@@ -58,6 +58,58 @@
       "genre": ["Horror"],
       "poster": "",
       "logline": "A vlogger ventures into a forbidden forest to uncover the truth behind his brother’s disappearance.",
+      "director": ["Hank Orion"],
+      "producer": ["Vadim Pusceddu"],
+      "writer": ["Hank Orion"],
+      "productionCompanies": ["San Roku Ku"],
+      "distributor": [""],
+      "cast": ["", ""]
+    },
+       {
+      "title": "The Silent House",
+      "year": 2026,
+      "genre": ["Horror"],
+      "poster": "",
+      "logline": "",
+      "director": ["Hank Orion"],
+      "producer": ["Vadim Pusceddu"],
+      "writer": ["Hank Orion"],
+      "productionCompanies": ["San Roku Ku"],
+      "distributor": [""],
+      "cast": ["", ""]
+    },
+    {
+      "title": "Candidates",
+      "year": 2026,
+      "genre": ["Thriller"],
+      "poster": "",
+      "logline": "",
+      "director": ["Hank Orion"],
+      "producer": ["Vadim Pusceddu"],
+      "writer": ["Hank Orion"],
+      "productionCompanies": ["San Roku Ku"],
+      "distributor": [""],
+      "cast": ["", ""]
+    },
+    {
+      "title": "Summer's End",
+      "year": 2026,
+      "genre": ["Thriller"],
+      "poster": "",
+      "logline": "",
+      "director": ["Hank Orion"],
+      "producer": ["Vadim Pusceddu"],
+      "writer": ["Hank Orion"],
+      "productionCompanies": ["San Roku Ku"],
+      "distributor": [""],
+      "cast": ["", ""]
+    },
+    {
+      "title": "Ashfield",
+      "year": 2026,
+      "genre": ["Horror"],
+      "poster": "",
+      "logline": "",
       "director": ["Hank Orion"],
       "producer": ["Vadim Pusceddu"],
       "writer": ["Hank Orion"],
