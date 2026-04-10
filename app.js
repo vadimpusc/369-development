@@ -30,7 +30,7 @@ const els = {
 let films = [];
 
 function join(v) {
-  if (!v) return "TBD";
+  if (!v) return "";
   return Array.isArray(v) ? v.filter(Boolean).join(", ") : String(v);
 }
 
@@ -68,10 +68,7 @@ function render(list) {
              onerror="this.onerror=null;this.src='${escapeHtml(PLACEHOLDER)}'">
       </div>
       <div class="cardInfo">
-        <div class="titleRow">
-          <div>${escapeHtml(f.title || "")}</div>
-          <div class="year">${escapeHtml(f.year || "")}</div>
-        </div>
+        <div class="cardTitle">${escapeHtml(f.title || "")}</div>
       </div>
     </button>
   `).join("");
@@ -95,17 +92,33 @@ function openFilm(slug, setHash = true) {
 
   const year = f.year ? String(f.year) : "";
   const genre = Array.isArray(f.genre) ? f.genre.join(", ") : (f.genre ? String(f.genre) : "");
-  if (els.kicker) els.kicker.textContent = [year, genre].filter(Boolean).join(" • ");
+  const kickerText = [year, genre].filter(Boolean).join(" • ");
+  if (els.kicker) {
+    els.kicker.textContent = kickerText;
+    els.kicker.style.display = kickerText ? "" : "none";
+  }
 
   if (els.title) els.title.textContent = f.title || "";
-  if (els.logline) els.logline.textContent = f.logline || "";
+  if (els.logline) {
+    els.logline.textContent = f.logline || "";
+    els.logline.style.display = f.logline ? "" : "none";
+  }
 
-  if (els.director) els.director.textContent = join(f.director);
-  if (els.producer) els.producer.textContent = join(f.producer);
-  if (els.writer) els.writer.textContent = join(f.writer);
-  if (els.prodCos) els.prodCos.textContent = join(f.productionCompanies);
-  if (els.distributor) els.distributor.textContent = join(f.distributor);
-  if (els.cast) els.cast.textContent = join(f.cast);
+  const fields = [
+    { el: els.director, value: f.director },
+    { el: els.producer, value: f.producer },
+    { el: els.writer, value: f.writer },
+    { el: els.prodCos, value: f.productionCompanies },
+    { el: els.distributor, value: f.distributor },
+    { el: els.cast, value: f.cast },
+  ];
+
+  fields.forEach(({ el, value }) => {
+    if (!el) return;
+    const text = join(value);
+    el.textContent = text;
+    el.parentElement.style.display = text ? "" : "none";
+  });
 
   modal.classList.add("open");
   modal.setAttribute("aria-hidden", "false");
